@@ -19,7 +19,7 @@
 - [x] Você adiciona as novas funcionalidades ao seu projeto em produção.
 - [x] Você quer deletar a branch da nova funcionalidade, depois de aplicar em seu projeto.
 
-- [ ] Você quer colocar seu projeto na nuvem.
+- [x] Você quer colocar seu projeto na nuvem.
 
 ### COMANDS
 
@@ -42,4 +42,4 @@
     2. __add origin link__ Cria um repositório na nuvem.
 11. __git push__ Envia o repositório para a nuvem.
     1. __-u origin master__ Define a branch master do repositório na nuvem.
-
+    
