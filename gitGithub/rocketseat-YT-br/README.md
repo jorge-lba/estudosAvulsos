@@ -43,4 +43,5 @@
 11. __git push__ Envia o repositório para a nuvem.
     1. __-u origin master__ Define a branch master do repositório em nuvem.
     2. __origin branchName__ Envia a branch para o repositório em nuvem.
+    3. __origin --delete branchName__ Deleta branch indicada da nuvem.
     
