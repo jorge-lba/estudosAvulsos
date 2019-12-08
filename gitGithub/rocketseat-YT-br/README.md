@@ -41,5 +41,6 @@
     1. __-v__ Mostra onde o seu repositório esta hospedado.
     2. __add origin link__ Cria um repositório na nuvem.
 11. __git push__ Envia o repositório para a nuvem.
-    1. __-u origin master__ Define a branch master do repositório na nuvem.
+    1. __-u origin master__ Define a branch master do repositório em nuvem.
+    2. __origin branchName__ Envia a branch para o repositório em nuvem.
     
