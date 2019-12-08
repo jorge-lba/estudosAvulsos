@@ -26,7 +26,7 @@
 - [x] Antes de enviar a resolução, precisamos atualizar o projeto loca.
 
 - [x] Você precisa voltar um arquivo para um determinado momento da linha do tempo.
-- [ ] Você precisa recuperar algo deletado.
+- [x] Você precisa recuperar algo deletado.
 
 ### COMANDS
 
@@ -43,7 +43,7 @@
     1. __numberCommit__ Mostra as alterações feitas em um ponto específico.
 7. __git branch__ Revela quantos ramos tem o seu projeto. 
     1. __name__ Cria um ramo secundário do projeto.
-    2.__-D name__ Deleta o ramos escolhido.
+    2. __-D name__ Deleta o ramos escolhido.
 8. __git checkout__ 
     1. __nameBranc__ Altera para o branch escolida. (status mostra em qual branch você está)
     2. __-b name__ Cria uma branch nova e entra nela.
