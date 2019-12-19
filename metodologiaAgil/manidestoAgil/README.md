@@ -5,16 +5,16 @@ O _Manifesto Ágil_ é uma declaração de valores e princípios essenciais para
 ## Os valores do Manifesto Ágil
 
 ### __Indivíduios e interações__ mais que processos e ferramentas.
-    Devemos entender que o desenvolvimento de software é __uma atividade humana__ e que a qualidade de intração entre as pessoas pode resolver problemas crônicos de comunicação.  Processos e Ferramentas são importantes, mas devem ser simples e uteis.
+Devemos entender que o desenvolvimento de software é __uma atividade humana__ e que a qualidade de intração entre as pessoas pode resolver problemas crônicos de comunicação.  Processos e Ferramentas são importantes, mas devem ser simples e uteis.
 
 ### __Software em funcionamento__ mais que documentação abrangente.
-    O maior indicador de que sua equipe realmente construiu alfo é software funcionando. Clientes querem é resultado e isso pode ser com software funcionando. Documentação também é impotante, mas que seja somente necessária e que agregue valor.
+O maior indicador de que sua equipe realmente construiu alfo é software funcionando. Clientes querem é resultado e isso pode ser com software funcionando. Documentação também é impotante, mas que seja somente necessária e que agregue valor.
 
 ### __Colaboração com o cliente__ mais que negociação de contratos.
-    Devemos atuar em conjunto com o cliente e não "contra" ele ou ele "contra" a gente. O que deve acontecer é colaboração, tomada de decisões em conjunto e trabalho em equipe, fazendo que todos sejam um só em busca de um objetivo.
+Devemos atuar em conjunto com o cliente e não "contra" ele ou ele "contra" a gente. O que deve acontecer é colaboração, tomada de decisões em conjunto e trabalho em equipe, fazendo que todos sejam um só em busca de um objetivo.
 
 ### __Responder a mudanças__ mais que seguir um plano.
-    Desenvolver software e produtos é um ambiente de alta incerteza e por isso não podemos nos debruçar em planos enormes e cheio de premissas. O que deve ser feito é aprender com as informações e feedbacks e adaptar o plano a todo momento.
+Desenvolver software e produtos é um ambiente de alta incerteza e por isso não podemos nos debruçar em planos enormes e cheio de premissas. O que deve ser feito é aprender com as informações e feedbacks e adaptar o plano a todo momento.
 
 ## Os 12 princípios do Manidesto Ágil
 
