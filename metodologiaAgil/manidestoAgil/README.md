@@ -1,6 +1,7 @@
 # Manifesto Ágil
 
 O _Manifesto Ágil_ é uma declaração de valores e princípios essenciais para o desenvolvimento de software. Ele foi criado em fevereito de 2001, onde se reuniram 17 profissionais que já praticavam __métodos ágeis__ como XP, DSDM, SCRUM, FDD e etc.
+---
 
 ## Os valores do Manifesto Ágil
 
@@ -15,8 +16,9 @@ Devemos atuar em conjunto com o cliente e não "contra" ele ou ele "contra" a ge
 
 ### __Responder a mudanças__ mais que seguir um plano.
 Desenvolver software e produtos é um ambiente de alta incerteza e por isso não podemos nos debruçar em planos enormes e cheio de premissas. O que deve ser feito é aprender com as informações e feedbacks e adaptar o plano a todo momento.
+---
 
-## Os 12 princípios do Manidesto Ágil
+## Os 12 princípios do Manifesto Ágil
 
 1. Nossa maior prioridade é satisfazer o cliente, através da entrega adiantada e contínua de software de valor.
 2. Aceitar mudanças de requisitos, mesmo no fim do desenvolvimento. Processos ágeis se adequam a mudanças, oara que o cliente possa tirar vantagens competitivas.
