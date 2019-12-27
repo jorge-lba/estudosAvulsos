@@ -22,15 +22,15 @@ const objectOptions = {
         option: {
             0: {
                 value: '---',
-                price: [10,20,30]
+                price: [11,21,31]
             },
             1: {
                 value: 'one',
-                price: [40,50,60]
+                price: [41,51,61]
             },
             2: {
                 value: 'two',
-                price: [70,80,90]
+                price: [71,81,91]
             },
 
         }
@@ -40,15 +40,15 @@ const objectOptions = {
         option: {
             0: {
                 value: '---',
-                price: [10,20,30]
+                price: [12,22,32]
             },
             1: {
                 value: 'one',
-                price: [40,50,60]
+                price: [42,52,62]
             },
             2: {
                 value: 'two',
-                price: [70,80,90]
+                price: [72,82,92]
             },
 
         }
@@ -58,11 +58,12 @@ const objectOptions = {
 const optionsForm = {
     model: 'Model',
     option: 'Option',
-    name: 'Value Name',
+    value: 'Value Name',
     price: 'Price'
 }
 
-const [ model, option, value ] = document.querySelectorAll( 'select' )
+const [ _model, _option, _value ] = document.querySelectorAll( 'select' )
+const _content = document.querySelector( '.content' )
 
 const objectKeys = ( object ) => Object.keys( object )
 const initFormModels = ( object ) => objectKeys( object ).map( key => object[key].name )
@@ -71,25 +72,46 @@ const initFormValueName = ( object ) => objectKeys( object ).map( key => object[
 
 const writeHtmlSelect = ( arrayContent, selectHtml ) => arrayContent.map( ( content, index ) => {
     const createOption = document.createElement( 'option' )
-    console.log(content, index, selectHtml)
     createOption.text = content
     selectHtml.appendChild(createOption)
-    console.log(content, index, selectHtml)
 } )
 
 const valueSelectHtml = (selectHtml) => selectHtml.options[selectHtml.selectedIndex].value.replace(' ', '' )
 
-writeHtmlSelect(initFormModels( objectOptions ), model)
-writeHtmlSelect(initFormOptions( objectOptions[valueSelectHtml(model)] ), option)
-writeHtmlSelect(initFormValueName( objectOptions[valueSelectHtml(model)].option), value )
+writeHtmlSelect(initFormModels( objectOptions ), _model)
+writeHtmlSelect(initFormValueName( objectOptions[valueSelectHtml(_model)].option), _option )
+
+const saveOptions = (model, option, value) =>{
+    const contentObject = {}
+    contentObject.model = model.selectedIndex
+    contentObject.option = option.selectedIndex
+    contentObject.value = value.selectedIndex
+
+    return contentObject
+}
+
+const getFormOptions = () => saveOptions( _model, _option, _value )
+const mergeObjectOption = ( oldObject, newObject ) => Object.assign( oldObject, newObject )
 
 
+console.log(mergeObjectOption( optionsForm, getFormOptions() ));
 
-console.log(objectKeys( objectOptions ))
-console.log(initFormOptions( objectOptions.modelB ))
-console.log(initFormValueName( objectOptions.modelB.option ) );
+const printContent = ( object, searchObject, html ) => {
+    const indexKeys =  Object.values(searchObject)
+    let objectResult = 'object'
+    
+    indexKeys.forEach(( index, count )=> {
+        if(count == 1) objectResult +='["option"]';
+        const obj = Object.keys(eval(objectResult))[index]
+        if(count < 2){
+            objectResult += `[\'${obj}\']`
+        }
+    })
+    
+    html.innerHTML = eval(objectResult).price
+    
+    return 'Feito'
+}
 
-console.log(initFormModels(objectOptions))
-console.log(objectOptions.modelB.option[2].price[1])
-console.log(optionsForm);
-console.log(model, option, value);
+_model.addEventListener( 'change', () => printContent(objectOptions, getFormOptions(), _content))
+_option.addEventListener( 'change', () => printContent(objectOptions, getFormOptions(), _content))
