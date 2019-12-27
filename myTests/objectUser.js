@@ -62,7 +62,7 @@ const optionsForm = {
     price: 'Price'
 }
 
-const [ _model, _option, _value ] = document.querySelectorAll( 'select' )
+const [ _model, _option ] = document.querySelectorAll( 'select' )
 const _content = document.querySelector( '.content' )
 
 const objectKeys = ( object ) => Object.keys( object )
@@ -81,16 +81,14 @@ const valueSelectHtml = (selectHtml) => selectHtml.options[selectHtml.selectedIn
 writeHtmlSelect(initFormModels( objectOptions ), _model)
 writeHtmlSelect(initFormValueName( objectOptions[valueSelectHtml(_model)].option), _option )
 
-const saveOptions = (model, option, value) =>{
+const saveOptions = (model, option) =>{
     const contentObject = {}
     contentObject.model = model.selectedIndex
     contentObject.option = option.selectedIndex
-    contentObject.value = value.selectedIndex
-
     return contentObject
 }
 
-const getFormOptions = () => saveOptions( _model, _option, _value )
+const getFormOptions = () => saveOptions( _model, _option )
 const mergeObjectOption = ( oldObject, newObject ) => Object.assign( oldObject, newObject )
 
 
