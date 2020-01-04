@@ -14,6 +14,10 @@ const objectOptions = {
                 value: 'two',
                 price: [70,80,90]
             },
+            3:{
+                value: 'three',
+                price: [100,110,120]
+            }
 
         }
     },
@@ -62,6 +66,7 @@ const optionsForm = {
     price: 'Price'
 }
 
+const _divOptions = document.querySelector('.options')
 const [ _model, _option ] = document.querySelectorAll( 'select' )
 const _content = document.querySelector( '.content' )
 
@@ -91,9 +96,6 @@ const saveOptions = (model, option) =>{
 const getFormOptions = () => saveOptions( _model, _option )
 const mergeObjectOption = ( oldObject, newObject ) => Object.assign( oldObject, newObject )
 
-
-console.log(mergeObjectOption( optionsForm, getFormOptions() ));
-
 const printContent = ( object, searchObject, html ) => {
     const indexKeys =  Object.values(searchObject)
     let objectResult = 'object'
@@ -111,5 +113,4 @@ const printContent = ( object, searchObject, html ) => {
     return 'Feito'
 }
 
-_model.addEventListener( 'change', () => printContent(objectOptions, getFormOptions(), _content))
-_option.addEventListener( 'change', () => printContent(objectOptions, getFormOptions(), _content))
+_divOptions.addEventListener('change', () => printContent(objectOptions, getFormOptions(), _content))
