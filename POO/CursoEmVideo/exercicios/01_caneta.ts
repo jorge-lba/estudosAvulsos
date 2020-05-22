@@ -60,3 +60,5 @@ function run(){
 }
 
 run()
+
+export = {}
