@@ -1,5 +1,5 @@
 import {TypeLutador} from './types'
-export const Lutadores:TypeLutador[] = [
+const lutadores:TypeLutador[] = [
     {
         nome:'Pretty Boy',
         nacionalidade: 'França',
@@ -63,3 +63,5 @@ export const Lutadores:TypeLutador[] = [
         empates: 4
     }
 ]
+
+export default lutadores

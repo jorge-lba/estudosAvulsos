@@ -1,6 +1,5 @@
 import { InterfaceLutador } from "./interfaces"
 import { TypeLutador } from "./types"
-import { Lutadores } from "./lutadores"
 
 const ApresentarLutador:any = {
     nome: "Lutador: ##",
@@ -117,13 +116,13 @@ export class Lutador implements InterfaceLutador{
 
 }
 
-const lutador = Lutadores.map(lutador => new Lutador(lutador))
+// const lutador = lutadores.map(lutador => new Lutador(lutador))
 
-lutador[0].status()
-lutador[1].status()
-lutador[2].status()
-lutador[3].status()
-lutador[4].status()
-lutador[5].status()
+// lutador[0].status()
+// lutador[1].status()
+// lutador[2].status()
+// lutador[3].status()
+// lutador[4].status()
+// lutador[5].status()
 
-console.log(lutador[3].categoria)
+// console.log(lutador[3].categoria)

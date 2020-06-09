@@ -12,3 +12,4 @@ Cusro de POO do canal **[Curso em Video](https://www.youtube.com/user/cursosemvi
 - __Aula 5:__ [Exemplo Prático em PHP](https://youtu.be/KR9xaLwTw-E?list=PLHz_AreHm4dmGuLII3tsvryMMD7VgcT7x)
 - __Aula 6:__ [Encapsulamento](https://youtu.be/ITV8l371MZw?list=PLHz_AreHm4dmGuLII3tsvryMMD7VgcT7x)
 - __Aula 7:__ [Relacionamento entre Classes](https://youtu.be/GLHbxDU9iBA?list=PLHz_AreHm4dmGuLII3tsvryMMD7VgcT7x)
+- __Aula 8:__ [Relacionamento de Agregação](https://youtu.be/ERdvijGtrq0?list=PLHz_AreHm4dmGuLII3tsvryMMD7VgcT7x)
