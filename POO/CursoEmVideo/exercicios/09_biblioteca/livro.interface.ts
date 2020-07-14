@@ -3,5 +3,6 @@ export default interface InterfaceLivro{
   fechar():void,
   folhar():void,
   avancarPagina():void,
-  voltarPagina():void
+  voltarPagina():void,
+  abrirNaPagina(pagina:number):void
 }

@@ -1,15 +1,27 @@
 import Pessoa from "./pessoa"
-import InterfaceLivro from './livro.interface'
+import InterPublicacao from './livro.interface'
 
-export default class Livro implements InterfaceLivro {
+export default class Livro implements InterPublicacao {
+  private _aberto:boolean
+  private _paginaAtual:number
+
   constructor(
     private _titulo:string,
     private _autor:Pessoa,
     private _totalDePaginas:number,
-    private _paginaAtual:number,
-    private _aberto:boolean,
     private _leitor:Pessoa
-  ){}
+  ){
+    this._aberto = false
+    this._paginaAtual = 1
+  }
+
+  public detalhes(){
+    return `Livro - ${this.titulo}\n` 
+      + `Quantidade de páginas: ${this.totalDePagina}\n`
+      + `Pagina atual: ${this.paginaAtual}\n`
+      +`Autor: ${this.autor.nome}\n`
+      +`Sendo lido por ${this.leitor.nome}`
+  }
 
   get titulo(){
     return this._titulo
@@ -70,6 +82,10 @@ export default class Livro implements InterfaceLivro {
 
   public voltarPagina(){
     this.paginaAtual--
+  }
+
+  public abrirNaPagina(pagina:number){
+    this.paginaAtual = pagina
   }
 
 }
