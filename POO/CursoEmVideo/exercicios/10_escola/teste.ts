@@ -1,4 +1,5 @@
 import Pessoa from './pessoa.classe'
+import Aluno from './aluno.classe'
 
 const pessoa = new Pessoa(
   'Jorge',
@@ -6,12 +7,9 @@ const pessoa = new Pessoa(
   'Feminino'
 )
 
-pessoa.nome += ' Alegretti'
-pessoa.idade = 28
-pessoa.sexo = 'Masculino'
-
-console.log(pessoa.nome)
-console.log(pessoa.idade)
-console.log(pessoa.sexo)
-
 pessoa.fazerAniversario()
+
+const aluno = new Aluno('Jorge', 28, 'Masculino')
+
+aluno.matricular('informática')
+aluno.cancelarMatricula()
