@@ -31,7 +31,7 @@ export default class Pessoa{
 
   public fazerAniversario(){
     this.idade ++
-    console.log(`${this.nome} fez ${this.idade}`)
+    console.log(`${this.nome} fez ${this.idade} anos`)
   }
 
 }
