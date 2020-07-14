@@ -1,6 +1,7 @@
-import Pessoa from "./pessoa";
+import Pessoa from "./pessoa"
+import InterfaceLivro from './livro.interface'
 
-export class Livro {
+export default class Livro implements InterfaceLivro {
   constructor(
     private _titulo:string,
     private _autor:Pessoa,
@@ -40,10 +41,35 @@ export class Livro {
   }
 
   set aberto(estado:boolean){
+    const valor = estado ? 'Aberto' : 'Fechado'
+    
     this._aberto = estado
+    console.log(`O livro está ${valor}`)
   }
 
   get leitor(){
     return this._leitor
   }
+
+  public abrir(){
+    this.aberto = true
+  }
+
+  public fechar(){
+    this.aberto = false
+  }
+
+  public folhar(){
+    const pagina = Math.floor(Math.random() * this.totalDePagina + 1)
+    this.paginaAtual = pagina
+  }
+
+  public avancarPagina(){
+    this.paginaAtual++
+  }
+
+  public voltarPagina(){
+    this.paginaAtual--
+  }
+
 }
