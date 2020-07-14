@@ -1,6 +1,6 @@
 # Curso de POO
 
-Cusro de POO do canal **[Curso em Video](https://www.youtube.com/user/cursosemvideo)**.
+Curso de POO do canal **[Curso em Video](https://www.youtube.com/user/cursosemvideo)**.
 - **[Github Curso em Video](https://github.com/cursoemvideo)**
 - **[Gustavo Guanabara](https://github.com/gustavoguanabara)**
 
