@@ -16,4 +16,5 @@ Curso de POO do canal **[Curso em Video](https://www.youtube.com/user/cursosemvi
 - __Aula 09:__ [Exercício prático POO](https://youtu.be/tIGJU26hzG4?list=PLHz_AreHm4dmGuLII3tsvryMMD7VgcT7x)
 - __Aula 10:__ [Herança (Parte 1)](https://youtu.be/8qgyXlSA1PY?list=PLHz_AreHm4dmGuLII3tsvryMMD7VgcT7x)
 - __Aula 11:__ [Herança (Parte 2)](https://youtu.be/He887D2WGVw?list=PLHz_AreHm4dmGuLII3tsvryMMD7VgcT7x)
+- __Aula 12:__ [Sobreposição](https://youtu.be/9-3-RMEMcq4?list=PLHz_AreHm4dmGuLII3tsvryMMD7VgcT7x)
 
