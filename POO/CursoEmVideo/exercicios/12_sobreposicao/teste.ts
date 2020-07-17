@@ -2,6 +2,7 @@ import Mamifero from './mamifero.classe'
 import Reptil from './reptil.classe'
 import Peixe from './peixe.classe'
 import Ave from './ave.classe'
+import Canguru from './canguru.mamifero'
 
 console.log('\nMamífero -------\n')
 
@@ -64,3 +65,20 @@ ave.alimentar()
 ave.emitirSom()
 ave.locomover()
 ave.fazerNinho()
+
+console.log('\nCanguru -------\n')
+
+const canguru = new Canguru(70, 3, 4)
+
+canguru.corDoPelo = 'Caramelo'
+
+console.log(canguru.corDoPelo)
+console.log(canguru.peso)
+console.log(canguru.idade)
+console.log(canguru.membros)
+
+canguru.alimentar()
+canguru.emitirSom()
+canguru.locomover()
+canguru.usarBolsa()
+
