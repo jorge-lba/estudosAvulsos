@@ -1,6 +1,7 @@
 import Mamifero from './mamifero.classe'
 import Reptil from './reptil.classe'
 import Peixe from './peixe.classe'
+import Ave from './ave.classe'
 
 console.log('\nMamífero -------\n')
 
@@ -36,7 +37,7 @@ console.log('\nPeixe -------\n')
 
 const peixe = new Peixe(.532, 1, 2)
 
-peixe.corDaEscama = 'Verde'
+peixe.corDaEscama = 'Azul'
 
 console.log(peixe.corDaEscama)
 console.log(peixe.peso)
@@ -47,3 +48,19 @@ peixe.alimentar()
 peixe.emitirSom()
 peixe.locomover()
 peixe.soltarBolhas()
+
+console.log('\nAve -------\n')
+
+const ave = new Ave(.132, 3, 2)
+
+ave.corDaPena = 'Amarela'
+
+console.log(ave.corDaPena)
+console.log(ave.peso)
+console.log(ave.idade)
+console.log(ave.membros)
+
+ave.alimentar()
+ave.emitirSom()
+ave.locomover()
+ave.fazerNinho()
