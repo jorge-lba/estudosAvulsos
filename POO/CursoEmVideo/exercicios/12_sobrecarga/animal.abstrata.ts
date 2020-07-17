@@ -25,7 +25,7 @@ export default abstract class Animal {
     return this._idade
   }
 
-  get membro(){
+  get membros(){
     return this._membros
   }
 
