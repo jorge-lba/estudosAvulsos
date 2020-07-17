@@ -6,6 +6,8 @@ import Canguru from './canguru.mamifero'
 import Cachorro from './cachorro.mamifero'
 import Cobra from './cobra.reptil'
 import Tartaruga from './tartaruga.reptil'
+import GoldFish from './goldFish.peixe'
+import Arara from './arara.ave'
 
 console.log('\nMamífero -------\n')
 
@@ -131,3 +133,35 @@ console.log(tartaruga.membros)
 tartaruga.alimentar()
 tartaruga.emitirSom()
 tartaruga.locomover()
+
+console.log('\nGoldFish -------\n')
+
+const goldFish = new GoldFish(.532, 1, 2)
+
+goldFish.corDaEscama = 'Azul'
+
+console.log(goldFish.corDaEscama)
+console.log(goldFish.peso)
+console.log(goldFish.idade)
+console.log(goldFish.membros)
+
+goldFish.alimentar()
+goldFish.emitirSom()
+goldFish.locomover()
+goldFish.soltarBolhas()
+
+console.log('\nArara -------\n')
+
+const arara = new Arara(.132, 3, 2)
+
+arara.corDaPena = 'Amarela'
+
+console.log(arara.corDaPena)
+console.log(arara.peso)
+console.log(arara.idade)
+console.log(arara.membros)
+
+arara.alimentar()
+arara.emitirSom()
+arara.locomover()
+arara.fazerNinho()
