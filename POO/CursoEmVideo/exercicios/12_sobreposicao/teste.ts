@@ -5,6 +5,7 @@ import Ave from './ave.classe'
 import Canguru from './canguru.mamifero'
 import Cachorro from './cachorro.mamifero'
 import Cobra from './cobra.reptil'
+import Tartaruga from './tartaruga.reptil'
 
 console.log('\nMamífero -------\n')
 
@@ -115,3 +116,18 @@ console.log(cobra.membros)
 cobra.alimentar()
 cobra.emitirSom()
 cobra.locomover()
+
+console.log('\nTartaruga -------\n')
+
+const tartaruga = new Tartaruga(80, 93, 4)
+
+tartaruga.corDaEscama = 'Verde Escuro'
+
+console.log(tartaruga.corDaEscama)
+console.log(tartaruga.peso)
+console.log(tartaruga.idade)
+console.log(tartaruga.membros)
+
+tartaruga.alimentar()
+tartaruga.emitirSom()
+tartaruga.locomover()
