@@ -4,6 +4,7 @@ import Peixe from './peixe.classe'
 import Ave from './ave.classe'
 import Canguru from './canguru.mamifero'
 import Cachorro from './cachorro.mamifero'
+import Cobra from './cobra.reptil'
 
 console.log('\nMamífero -------\n')
 
@@ -99,3 +100,18 @@ cachorro.emitirSom()
 cachorro.locomover()
 cachorro.enterrarOsso()
 cachorro.abanarRabo()
+
+console.log('\nCobra -------\n')
+
+const cobra = new Cobra(12, 3, 0)
+
+cobra.corDaEscama = 'Verde Escuro'
+
+console.log(cobra.corDaEscama)
+console.log(cobra.peso)
+console.log(cobra.idade)
+console.log(cobra.membros)
+
+cobra.alimentar()
+cobra.emitirSom()
+cobra.locomover()
